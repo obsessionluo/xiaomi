@@ -1,0 +1,151 @@
+.m2_text a:hover {
+	color: #ff6700;
+}
+
+.m7_txt_2 a:hover {
+	color: #ff6700;
+	text-decoration: underline;
+}
+
+.m4 img:hover {
+	cursor: pointer;
+}
+
+.m7_img_10_2 {
+	cursor: pointer;
+}
+
+.donghua2_1 {
+	color: white;
+	text-align: center;
+	display: none;
+	width: 230px;
+	height: 100px;
+	background-color: #FF6700;
+	position: absolute;
+	z-index: 999;
+}
+
+.m7_img_2:hover .donghua2_1 {
+	display: block;
+	/* transform: translate(0px,-100px);
+	transition: all 1s ease-out 10s; */
+	animation: donghua2 0.2s forwards;
+	transition: ease-out;
+}
+
+@keyframes donghua2 {
+	0% {
+		transform: translate(0px, 0px);
+	}
+
+	25% {
+		transform: translate(0px, -25px);
+	}
+
+	50% {
+		transform: translate(0px, -50px);
+	}
+
+	75% {
+		transform: translate(0px, -75px);
+	}
+
+	100% {
+		transform: translate(0px, -100px);
+	}
+
+}
+
+.m7_img_3:hover .donghua2_1 {
+	display: block;
+	animation: donghua2 0.2s forwards;
+	transition: ease-out;
+}
+
+.m7_img_4:hover .donghua2_1 {
+	display: block;
+	animation: donghua2 0.2s forwards;
+	transition: ease-out;
+}
+
+.m7_img_5:hover .donghua2_1 {
+	display: block;
+	animation: donghua2 0.2s forwards;
+	transition: ease-out;
+}
+
+.m7_img_7:hover .donghua2_1 {
+	display: block;
+	animation: donghua2 0.2s forwards;
+	transition: ease-out;
+}
+
+.m7_img_8:hover .donghua2_1 {
+	display: block;
+	animation: donghua2 0.2s forwards;
+	transition: ease-out;
+}
+
+.m7_img_9:hover .donghua2_1 {
+	display: block;
+	animation: donghua2 0.2s forwards;
+	transition: ease-out;
+}
+
+.donghua1_1,
+.donghua1_2,
+.donghua1_3,
+.donghua1_4,
+.donghua1_5 {
+	/* border:  10px #000000 solid; */
+	border: 1px solid darkorange;
+	/* background-image: url(../images/magnify.png);
+	background-position-x: center;
+	background-position-y: center; */
+	/* background-repeat: no-repeat; */
+	position: relative;
+	/* z-index:1; */
+	bottom: 210px;
+	left: 80px;
+	height: 107px;
+	width: 77px;
+	opacity: 0;
+	box-shadow: 0px 0px 7px 2px darkorange;
+	transition: .5s;
+
+}
+
+.m6_img_1:hover .donghua1_1,
+.m6_img_2:hover .donghua1_2,
+.m6_img_3:hover .donghua1_3,
+.m6_img_4:hover .donghua1_4,
+.m6_img_5:hover .donghua1_5 {
+	opacity: 0.8;
+	transform: scale(3);
+	transition: all .5s ease-in-out;
+}
+
+.donghua1_1 img,
+.donghua1_2 img,
+.donghua1_3 img,
+.donghua1_4 img,
+.donghua1_5 img {
+	width: 5px;
+	height: 5px;
+	opacity: 0;
+	display: block;
+	margin: 0 auto;
+	margin-top: 50px;
+	transition: .5s;
+}
+
+.m6_img_1:hover .donghua1_1 img,
+.m6_img_2:hover .donghua1_2 img,
+.m6_img_3:hover .donghua1_3 img,
+.m6_img_4:hover .donghua1_4 img,
+.m6_img_5:hover .donghua1_5 img {
+	opacity: 1;
+	transform: scale(5);
+	transition: .5s;
+}
